@@ -1,0 +1,111 @@
+<!-- LOGGED IN PAGE / WELCOME PAGE FOR THE LOGGED IN USER IN THE "CHATTER APPLICATION"  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WELCOME | USER</title>
+
+    <!-- GOOGLE-FONTS-LINK  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+<!-- STYLE SECTION FOR LOGGED IN PAGE  -->
+<style>
+/* LOGGED-IN-STYLE-SCRIPT   */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+#main-container{
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(to top left, yellow, red);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#main-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.5rem, 3.5vw, 5rem);
+    font-weight: bold;
+}
+
+#main-container h1 span {
+    border: 0.3px solid rgba(219, 34, 34, 0.637);
+    border-radius: 15px;
+
+    background-color: rgba(219, 34, 34, 0.637);
+
+    padding: 10px 15px;
+
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: white;
+}
+
+#main-container h4 {
+    margin-top: 70px;
+    padding: 10px 20px;
+    font-size: clamp(0.8rem, 1.1vw, 2.3rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s ease;
+}
+
+#main-container h4:hover {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#main-container .logout {
+    margin-top: 400px;
+    border-style: none;
+    outline: none;
+    text-decoration: none;
+    color: black;
+
+    padding: 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+
+    background: white;
+
+    border: 0.5px solid white;
+    border-radius: 10px;
+}
+
+#main-container .logout:hover {
+    background: rgba(255, 255, 255, 0.774);
+}
+</style>
+
+</head>
+<body>
+    <main>
+        <section id="main-container">
+            <h1>WELCOME <span> <%= name %> </span></h1>
+            <h4> MAKE YOUR FIRST ONLINE FRIEND HERE </h4>
+            <a href="/" class="logout"> LOGOUT </a>
+        </section>
+    </main>
+</body>
+</html>

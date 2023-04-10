@@ -1,0 +1,130 @@
+<!-- LOGIN PAGE OF THE "CHATTER APPLICATION"  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHATTER | LOGIN</title>
+
+    <!-- GOOGLE-FONTS-LINK  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<!-- STYLE SECTION FOR LOGIN IN PAGE  -->
+<style>
+/* LOGIN-PAGE-STYLE-SCRIPT  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#main-container {
+    width: 100%;
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-container .form-layout .form-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    margin: 50px;
+}
+
+#main-container .form-layout h1 {
+    text-align: center;
+    font-size: clamp(1.9rem, 5vw, 6rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+#main-container .form-fields .email  {
+    margin: 30px;
+    padding: 20px 30px;
+    outline: none;
+    border-style: none;
+
+    border: 3px solid cornflowerblue;
+    border-radius: 15px;
+
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-container .form-fields .password {
+    margin: 30px;
+    padding: 20px 30px;
+    outline: none;
+    border-style: none;
+
+    border: 3px solid cornflowerblue;
+    border-radius: 15px;
+
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-container .form-fields .btn-login {
+    padding: 10px 80px;
+    outline: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.8rem, 1.5rem, 2rem);
+    font-weight: bold;
+
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:540px) {
+    #main-container .form-fields .email {
+        margin: 10px;
+        padding: 15px 10px;
+    }
+
+    #main-container .form-fields .password {
+        margin: 10px; 
+        padding: 15px 10px;
+        
+    }
+
+    #main-container .form-fields .btn-login {
+        margin-top: 10px;
+        padding: 10px 40px;
+        font-size: clamp(0.8rem, 1vw, 2rem);
+
+    }
+}
+</style>
+
+</head>
+<body>
+    <section id="main-container">
+        <div class="form-layout">
+            <h1>I AM ALREADY A MEMBER</h1>
+
+            <form action="/login" method="POST" class="form-fields"> 
+                <input type="email" placeholder="Email" name="email" autocomplete="off" class="email" required>
+                
+                <input type="password" placeholder="Password" name="password" autocomplete="off" class="password" required>
+
+                <button type="submit" class="btn-login"> LOGIN </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

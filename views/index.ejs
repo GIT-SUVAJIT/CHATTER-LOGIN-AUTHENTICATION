@@ -1,0 +1,154 @@
+<!-- INDEX PAGE OF THE APPLICATION "CHATTER" -->
+<!-- HTML PAGE  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATTER | INDEX</title>
+
+<!-- STYLE SECTION FOR INDEX PAGE  -->
+<style>
+/* INDEX-PAGE-STYLE-SCRIPT  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+#first-page {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top left, yellow, red);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#first-page h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.5rem, 3.5vw, 5rem);
+    font-weight: bold;
+}
+
+#first-page h1 span {
+    border: 0.3px solid rgba(219, 34, 34, 0.637);
+    border-radius: 15px;
+
+    background-color: rgba(219, 34, 34, 0.637);
+
+    padding: 10px 15px;
+
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: white;
+}
+
+#second-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#second-page .anchor {
+    text-decoration: none;
+}
+
+#second-page .login h1 {
+    font-size: clamp(1.2rem, 2vw, 4rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    border: 1px solid rgba(224, 22, 22, 0.829);
+    border-radius: 10px;
+    padding-inline: 45px;
+
+    background: rgba(224, 22, 22, 0.829);
+
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: white;
+
+    transition: padding-inline 0.5s ease;
+}
+
+#second-page .login h1:hover {
+    padding-inline: 100px;
+    cursor: pointer;
+}
+
+#second-page .register h1 {
+    font-size: clamp(1.2rem, 2vw, 4rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    border: 1px solid rgba(224, 22, 22, 0.829);
+    border-radius: 10px;
+    padding-inline: 30px;
+
+    background: rgba(224, 22, 22, 0.829);
+
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: white;
+
+    transition: padding-inline 0.5s ease;
+}
+
+#second-page .register h1:hover {
+    padding-inline: 85px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:540px){
+    #second-page {
+        flex-direction: column;
+    }
+
+    #second-page .login h1 {
+        padding: 7px 45px;
+    }
+
+    #second-page .register h1 {
+        padding: 7px 30px;
+    }
+}
+</style>
+
+    <!-- GOOGLE-FONTS-LINK  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+
+        <section id="first-page">
+            <h1>WELCOME TO <span>CHATTER</span></h1>
+        </section>
+    
+        <section id="second-page">
+            <div class="login">
+                <a href="/login" class="anchor"> <h1>LOGIN</h1> </a>
+            </div>
+    
+            <div class="register">
+                <a href="/register" class="anchor"> <h1>REGISTER</h1> </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCRIPT-LINK  -->
+    <script type="text/javascript" href="../JavaScript/script.js"></script>
+</body>
+</html>
